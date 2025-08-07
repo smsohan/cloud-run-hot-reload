@@ -6,7 +6,7 @@ graph TD
         A[User]
     end
 
-    subgraph "Container (Listening on :8080)"
+    subgraph "Container (Listening on \:8080)"
         B[Nginx]
     end
 
