@@ -13,6 +13,7 @@ graph TD
     subgraph "Backend Services (Internal)"
         C[file_handler on :8000]
         D[applet on :3000]
+        C -- Updates Source for Hot Reload--> D
     end
 
     A -- "HTTP Request on :8080" --> B
