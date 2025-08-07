@@ -17,12 +17,12 @@ trap cleanup SIGINT SIGTERM
 # Start the file_handler API in the background.
 echo "Starting file_handler service..."
 cd /app/file_handler
-npm start &
+PORT=8000 npm start &
 
 # Start the applet in the background.
 echo "Starting applet service..."
 cd /app/applet
-npm run dev &
+PORT=3000 npm run dev &
 
 # Start nginx in the background.
 echo "Starting nginx..."
