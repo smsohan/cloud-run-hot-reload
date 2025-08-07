@@ -16,7 +16,7 @@ graph TD
     end
 
     A -- "HTTP Request on :8080" --> B
-    B -- "Proxies `/_sync` requests" --> C
+    B -- "Proxies /sync requests" --> C
     B -- "Proxies all other requests" --> D
 ```
 
